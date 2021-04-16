@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script>
+        // 모든 태그 로드된후 실행
+        window.onload = function(){
+            // 이미지 태그 선택 
+            var img = document.getElementsByTagName("img")[0];
+            img.onload = function(){
+                alert("img load");
+            };
+        }
+        window.onunload = function(){
+            alert("window unload"); 
+        }
+        function imgload(){
+            alert("imgLoad");
+        }
+    </script>
+</head>
+<body>
+    <h1>onload 이벤트테스트</h1>
+    <img src="/4.3/cup.png" onload="imgLoad()">
+    <h2>h2영역</h2>
+    
+</body>
+</html>

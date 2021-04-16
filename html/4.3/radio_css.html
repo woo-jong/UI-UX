@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+<style>
+input{width:0px;
+      
+}
+label{
+    padding-left: 30px;
+    background-image: url('/4.3/radio_none_check.png');
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    background-size: 16px;
+
+}
+input:checked+label{
+    background-image: url('/4.3/radio_check.png');
+}
+</style>
+</head>
+<body>
+    <input type="radio" name="n" id="n1" ><label for="n1">예</label><br>
+    <input type="radio" name="n" id="n1" checked><label for="n1">아니오</label>
+    <!--label에 백그라운드이미지를 준다/ 먼저크기를 0으로 주고 백그라운드랑 패딩을줘서 만든다-->
+</body>
+</html>

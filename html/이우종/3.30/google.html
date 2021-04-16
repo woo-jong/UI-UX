@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel="stylesheet" href="/css/google_layout.css">
+<style>
+  /*전체 태그  class id순서로 우선순위*/
+*{margin:0px;
+  padding:0px;}
+header{width:100%;}
+nav ul{display:inline-block;
+  }
+
+ul{list-style-type: none; font-size: 0px; }
+li{display:inline-block;font-size:16px; padding:10px;}
+.login{background-color:rgb(75, 75, 221); color:white; width:70px; height:40px; border:none;
+      display:inline-block; box-sizing: border-box; padding:8px 0px; text-align: center;
+}
+.center{text-align: center;}
+input{width:500px; height:44px; background-image: url('/3.30/search.png' ); padding-left:50px;
+      background-repeat: no-repeat; box-sizing: border-box;
+       border-radius: 5px; background-size: 32px ;  border-style: none;
+      }
+
+.border{border:none; height: 32px; padding :8px 0px; font-size:16px; display:inline-block;
+    margin-right:5px; 
+
+  }
+.app:hover{
+  background-color: #e8e8e8;
+  border-radius: 32px;
+  padding:16px !important;
+}
+
+.float_left{float:left}
+.float_right{float:right}
+a:hover{text-decoration:underline;}
+a:link,a:visited{text-decoration: none; color:black;}
+a>li{line-height: 16px; box-sizing: border-box;}
+
+nav{height:300px;}
+section{height:500px;
+  text-align: center;
+  
+}
+   form{
+    border:1px solid #e8e8e8;
+    border-radius: 22px;
+    display: inline-block;
+    padding:0px 20px;
+}
+form > * {
+    float: left;}
+    
+    form a {
+    display: inline-block;
+    height: 32px;
+    padding:8px 0px;
+    margin-left: 10px;}
+    form a > img{
+    width:32px;
+}
+article > button{
+    clear: both;
+}
+footer{height:30px; padding-bottom:0px}
+.box{box-sizing: border-box; height:830px;}
+
+</style>
+</head>
+<body class="box">
+  <header>
+    <nav>
+      <ul class="float_right">
+        <li><a href="#">Gmail</a></li>
+        <li><a href="#">이미지</a></li>
+        <li><a href="#"><img src="app_menu.png" height="15" width="15" class="app"></a></li>
+        <li><a href="#"><button class="login">로그인</button></a></li>
+      </ul>
+      </nav>
+    </header>
+    <section >
+      <img src="google.png" >
+      <article>
+        <form action="">
+      
+      <input type="text" id="search">
+      <a><img src="/3.30/keyboard.png" alt="화상 키보드 실행 아이콘"></a>
+      <a><img src="/3.30/mic.png" alt="음성인식 검색 실행 아이콘"></a>
+    </form>
+    <div>
+      <button class="border"><a href="#">google검색</a></button>
+      <button class="border"> <a href="#">I'm Feeling Lucky</a></button>
+    </div>
+    </article>>
+    </section>
+<footer>
+  대한민국
+  <hr>
+  <ul class="float_left">
+    <li>Google 정보</li> 
+    <li>광고</li> 
+    <li>비즈니스</li> 
+    <li>검색의 원리</li> 
+  </ul>
+  
+    <ul class="float_right">
+      <li>설정 </li> 
+      <li>약관</li> 
+      <li>개인정보처리방침</li> 
+     
+    </ul>
+</footer>
+  
+</body>
+</html>

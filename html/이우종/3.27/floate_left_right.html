@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        .a {
+            width: 200px;
+            height: 200px;
+            background-color: darkblue;
+            border: 1px solid black
+        }
+
+        .b {
+            width: 100px;
+            height: 300px;
+            background-color: darkgray;
+            border: 1px solid black
+        }
+
+        .c {
+            width: 300px;
+            height: 400px;
+            background-color: red;
+            border: 1px solid black
+        }
+        .left{float:left;
+        
+        }
+        .right{float:right;
+        
+        }
+        .clear{clear :both}
+        .container{width:1200px; height:auto; border:1px solid black;
+
+
+        }
+        /*clear: float효과를 무력화함 영역을 잡게끔함*/
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    <div class="a left"></div>
+    <div class="b right"></div>
+    </div>
+
+    <div class="c clear"></div>
+</body>
+
+</html>

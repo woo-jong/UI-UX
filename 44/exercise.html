@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>화면 구현</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+<style>
+*{
+    margin:0px;
+    padding:0px;
+}
+header{
+    width:100%;
+    background-color: lightblue ;
+}
+nav div {
+    border:1px solid red;
+    display:inline-block;
+    width:100%;
+    padding: 20px 200px ;
+    /*기존 크기 100% 패딩영역과 테두리 영역 크기까지 포함*/
+    box-sizing: border-box;
+}
+nav >div> img{float: left;
+            top:0px;
+            
+            width:200px;
+            height:70px;
+}
+nav >div>form{
+    float:right;
+    border: 1px solid black;
+}
+nav >img {width:100%; 
+            height:300px;
+            clear:both;    /*float 다음에 띄우기위해*/
+}
+nav{width:100%;
+    background-color:lightgray;
+    text-align: center;
+}
+nav ul { /*내용에따라 크기를 줄떄 inline-block*/
+    list-style-type: none;
+    display:inline-block
+}
+nav ul li{
+    width: 200px;
+    height:70px;
+    float:left;
+}
+li a:linked , a:visited{
+    font-size: 20px;
+    line-height: 20px;
+    padding:25px 0px;
+    display: inline-block;
+    width:100%;
+    text-decoration: none;
+    color:black;
+}
+article{
+    width:600px;
+    margin:0px auto;
+
+}
+table{
+    border-collapse: collapse;
+
+}
+td,th{
+border:1px solid black;
+padding:10px 50px;
+
+}
+footer{
+    width:100%;
+    padding:30px 100px;
+    background-color: lightgray;
+}
+footer ul{
+    list-style: none;
+    
+}
+footer li{
+    margin-bottom:10px;
+}
+</style>
+</head>
+<body>
+    <header>
+     <div>
+        <img src="/4.3/headphone.png" alt="로고이미지">
+        <form action="">
+            <label for="id">아이디</label><input type="text" name="id" id="id">
+            <label for="pass">아이디</label><input type="password" name="pass" id="pass">
+            <button>로그인</button>
+            <button type="button">회원가입</button>
+        </form>
+         
+     </div>  
+     <img src="/4.3/header_img.jpg" alt="광고이미지">  
+    </header>
+        <nav>
+            <ul>
+                <li><a href="#" title="메인페이지 이동"></a>홈</li>
+                <li><a href="#" title="제품소개페이지 이동"></a>홈</li>
+                <li><a href="#" title="게시판페이지 이동"></a>홈</li>
+                <li><a href="#" title="고객센터페이지 이동"></a>홈</li>
+            </ul>
+        </nav>
+    <section>
+        <article>
+            <h2>게시판</h2>
+            <table>
+                <tr>
+                    <th>No</th>
+                    <th>Title</th>
+                    <th>Date</th>
+                    <th>Count</th>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>제목</td>
+                    <td>2019-12-11</td>
+                    <td>44</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>제목</td>
+                    <td>2019-12-11</td>
+                    <td>44</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>제목</td>
+                    <td>2019-12-11</td>
+                    <td>44</td>
+                </tr>
+            </table>
+        </article>
+        
+    </section>
+    <footer>
+        <ul>
+            <li>사업자번호: 0000-0000-0-0000</li>
+            <li>연락처: 000-0000-0000</li>
+            <li>이메일: 0000@gmail.com</li>
+        </ul>
+    </footer>
+</body>
+</html>

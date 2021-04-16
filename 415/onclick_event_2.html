@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+<script>
+    window.onload=function(){
+        var btn =document.getElementsByTagName("button")[0];
+        btn.onclick = function(){
+            //아이디와 패스워드값이 전부입력되었는지 체크
+            var id=document.getElementById("id");
+            var pass=document.getElementById("pass");
+            if(id.value=!"" && pass.value=!""){
+                document.write("")
+            }
+        }
+    }
+</script>
+</head>
+<body>
+        <input type="text" id="id"><br>
+        <input type="password" id="pass"><br>
+        <button>로그인</button>
+
+</body>
+</html>

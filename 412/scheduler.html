@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script >
+        var num;
+      var today = new Date("2021-04-12");
+        var tag = "<h2>" + (today.getMonth() + 1) + "월 달력</h2>";
+        tag += "<table><tr><th>일</th><th>월</th>"+
+            "<th>화</th><th>수</th><th>목</th>"+
+            "<th>금</th><th>토</th></tr>";
+           var start= new Date();
+           start.setHours(0);
+           start.setMinutes(0);
+           start.setSeconds(0);
+           start.setDate(1);
+           var end = new Date();
+           end.setMonth(end.getMonth()+1);
+           end.setDate(0); /* 전달의 마지막날  */
+           start.setMinutes(0);
+           start.setSeconds(0);
+           start.setdate(0);
+
+           console.log(start);
+           console.log(end);
+                                   /* 1  -      4 = /* 전달 31일또는 30일부터 자동으로찍힘  */ 
+           start.setDate(start.getdate()-start.getDay ());
+
+           end.setDate(end.getdate()+6-end.getDay());
+           console.log("달력 첫캇 :")
+
+           
+            tag += "</table>";
+                                        
+               
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

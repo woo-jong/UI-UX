@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script >
+        
+        var info = navigator.userAgent.toLowerCase();
+        //나올수 있는 값 ; windows ,machintosh, iphone, android 
+        //해당  값이 있으면 해당홈페이지로 이동하는 링크를 출력
+        //windows --> ms 홈페이지
+        // machintosh ->apple mac 소개 페이지
+        // iphone --> apple iphone 소개 페이지
+        // android -->구글 홈페이지 
+        
+            if(info.indexof("windows")!=-1){ /* -1이아니면 있다는얘기 */
+                    document.write("<a href='https=//www.microsoft.com/ko-kr'>'ms홈페이지이동</a>");                  
+            }
+            
+           else if(info.indexof("macintosh")!=-1){ /* -1이아니면 있다는얘기 */
+                    document.write("<a href='https=//www.apple/kr/mac/'>'mac소개페지지/a>");                  
+            }
+            
+            else if(info.indexof("iphone")!=-1){ /* -1이아니면 있다는얘기 */
+                    document.write("<a href='https=//www.apple.com/kr/iphone/'>apple아이폰</a>");                  
+            }
+            
+            else{
+                    document.write("<a href='https=//www.google.com/'>'ms홈페이지이동</a>")  }
+            
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

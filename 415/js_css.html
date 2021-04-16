@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+<script>
+
+</script>
+<style>
+    #back{
+        background-image: url(/3.18/img7.jpg);
+        width:100px;
+        height:100px;
+        background-size: 100%;  
+    }
+</style>
+</head>
+<body>
+        <div id="pop" >영역 태그</div>
+        <ul>
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+        <li>d</li>
+    </ul>
+    <div id="back" onmouseover="rolloverImage()"></div>
+        <script>
+            var pop= document.getElementById("pop");//태그선택
+            var ul =document.getElementsByTagName("ul")[0]; //Tagname지정시 배열번호를 꼭지정해주자
+            //  alert(pop.innerHTML); //해당하는 태그가 갖고있는 내용을 가져옴
+        //선택된 태그에 css적용하는 방법 
+        pop.style.color ="red";
+        pop.style.backgroundColor ="yellow";
+        ul.style.listStyleType="none";
+        //-가 들어가는 스타일형식은 -대신에 두번쨰글자의 시작을 대문자로시작 
+        //listStyleType , backgroundColor;
+        function rolloverImage(){
+            var back= document.getElementById("back");
+            back.style.backgroundImage="url('/4.3/cup.png')";
+        }
+        </script>
+</body>
+</html> 

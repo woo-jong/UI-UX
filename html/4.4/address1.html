@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script>
+var address1= '서울시';
+var address2= '마포구';
+var address3= '노고산동';
+var address4= '89-2';
+
+document.write(address1);
+address1+=address2;
+document.write(address1);
+address1+=address3;
+document.write(address1);
+address1+=address4;
+//태그조립 //
+ var num1;
+ var num2;
+
+ 
+    document.write("<table>");
+for (num1=0; num1 <=2; num1++){
+    document.write("<tr>");
+
+    for (num2=1; num2<=2; num2++){
+        document.write( "<td>"+(num1*num2+num2)+"</td>");
+}
+document.write("</tr>");
+}
+document.write("</table>");
+
+
+
+    </script>
+    <style>
+    table{
+        border-collapse: collapse;
+        border:1px solid black
+    }
+    td{
+        border:1px solid black;
+        padding:20px;
+    }
+</style>
+</head>
+<body>
+    
+</body>
+</html>

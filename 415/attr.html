@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+<img src="/4.3/cup.png" alt="대체텍스트"><br>
+<input type="text" id="txt">
+<button onclick="btnclick()">실행</button>
+    <script>
+        function btnclick(){
+
+        
+        var img= document.getElementsByTagName("img")[0];
+        var txt =document.getElementById("txt");
+        /* alert(txt.value);
+        alert(img.src); */
+        
+        img.src="/4.3/home.png";
+        //이미지는 다른이미지로 교체
+        //input 태그에는 값을 test로 변경
+        txt.value="Test"
+        }
+        </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script>
+        var str = "학교교육 및 평생교육을 포함한 교육제도와 그 운영, 교육재정 및 교원의 지위에 관한 기본적인 사항은"
+                   +"  법률로 정한다. 모든 국민은 법률이 정하는 바에 의하여 공무담임권을 가진다"
+    //문자열에서 위치에 해당하는 한글자 뽑음 - 위치값은 0 부터시작 
+    document.write(str.charAt(5), "", str.charAt(6),"<br>"); 
+    document.write(str.indexOf("학교"), "<br>");  //몇번째에 있는지 찾기
+    document.write(str.indexOf("학교",10), "<br>");  //10번째부터 찾겠다.
+ 
+//문자열 개수
+document.write("문자열 개수 : ",str.length+"<br>"); //
+document.write(str.replace("학" , "본")) ;
+document.write(str); 
+//바꾼후에 저장 
+//str = str.replace("법", "신");
+//저장된 내용전체를 바꿈 
+str = str.replaceAll("법","신");
+document.write(str,"<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+ <form action="" method="GET">
+     가입약관동의 여부:
+     <!--radion button은 여러개중 하나의 항목만 선택할때 쓰임--> <!--name속성을넣어 하나의그룹으로묶어준다
+    그럼 둘중에 하나만 선택이된다.-->
+     <input type="radio" name="agree" value="yes">예 
+     <input type="radio" name="agree" value="no">아니오
+    날짜 : <input type="date">
+    수량 : <input type="number" name="" id="" min="0" step="3"> <!--min:최소값, max=최대값 step=증감값
+    -->
+    <br>
+    첨부파일 : <input type="file" name="" id=""><br>
+    슬라이더 : <input type="range" name="id" value="100">
+    color picker : <input type="color" name="" id="">
+    <select name="sell">
+        <option value="A">선택1</option>
+        <option value="B" selected>선택2</option> <!--selected 미리초기설정값-->>
+        <option value="C">선택3</option>
+        <option value="D">선택4</option>
+    </select>
+</br>
+    <!--textarea는 input태그의 텍스트 상자에서 쓰던속성을 전부 사용이 가능
+    cols : 컬럼 개수 , rows-: 라인수
+    textarea 태그에선 태그안에 내용을 넣으면 넣은 내용이 그대로 미리 입력되어 있음-->>
+    <textarea name="" id="" cols="30" rows="10">   </textarea>
+    <button type="submit">전송</button>
+    </form>   
+
+</form>
+</body>
+</html>

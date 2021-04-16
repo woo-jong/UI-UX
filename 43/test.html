@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+     <meta charset='utf-8'>
+     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+     <title>Page Title</title>
+     <meta name='viewport' content='width=device-width, initial-scale=1'>
+ <style>
+     *{
+    margin:0;
+    padding:0;
+}
+.left {
+            width: 60px;
+            height: 1800px;
+            background-color: lightgray;
+            box-sizing: border-box;
+            position: fixed;
+            left: 0px;
+            top: 0px;
+        }
+
+        .left li {
+            width: 100%;
+            height: 40px;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .left img{
+            width: 40px;
+            height: 40px;
+            
+        }
+
+        
+        header {
+            width: 1860px;
+            height: 500px;
+            box-sizing: border-box;
+            margin-left: 60px;
+            background-image: url('/4.1/header.jpg');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        ul{list-style-type: none;}
+        .main_li{display: inline-block;
+                text-align: center;
+                margin-right:100px; 
+                margin-top: 10px;
+                font-size:25px;
+                font-weight: bold;           
+            }
+        .main{height:60px;
+                width:1860px;
+                border:1px solid black; 
+                text-align: center; 
+                margin-left: 60px;
+
+        }
+        section{
+            height:1040px;
+            width:1860px;
+        }
+    form{margin: 0px auto;
+        font-size:30px;
+        font-weight: bold;
+        margin-top: 50px;
+        width:800px;
+        height:1000px;
+       
+    }
+    .title{margin:50px}
+    .mail{font-size: 30px;
+        }
+        .mail_text{width:300px; height:30px}
+    form li{margin:10px  ;
+        vertical-align: top;
+            
+    }
+    input{margin-left:10px;}
+    .input_title{width:300px; height:30px; margin-left: 20px;}
+    textarea{width:400px; height:300px;}
+    
+    button{
+        color:white;
+        background-color: rgb(80, 88, 204);
+        width:70px; height:50px;
+        border: none;
+        margin:0px 100px;
+        
+    }
+    div{margin:50px;
+    text-align: center;}
+    select{width:100px;        
+    height:30px;
+    }
+    
+</style>
+    </head>
+    <body>
+        <nav class="left">
+            <ul>
+                <li><a href="#" title=""><img src="/4.3/home.png" alt="메인페이지 이동아이콘"  ></a>
+                </li>
+                <li><a href="#" title=""><img src="/4.3/cup.png" alt="제품소개페이지 이동" ></a>
+                </li>
+                <li><a href="#" title=""><img src="/4.3/picture.png" alt="갤러리페이지 이동"></a>
+                </li>
+                <li><a href="#" title=""><img src="/4.3/player.png" alt="광고페이지 이동아이콘"></a>
+                </li>
+                <li><a href="#" title=""><img src="/4.3/headphone.png" alt="고객센터페이지 이동아이콘"> </a></li>
+            </ul>
+    
+        </nav>
+        <header></header>
+    <nav class="main">
+        <ul>
+            <li class="main_li">HOME</li>
+            <li class="main_li">COFFEE</li>
+            <li class="main_li">CF</li>
+            <li class="main_li">PRINT</li>
+            <li class="main_li">문의하기</li>
+        </ul>
+    </nav>
+    <section>
+        <article>
+            
+              
+                <form action="" class="" method="POST">
+                    
+                    
+                
+                    <div>
+                        <span class="title">제품 문의하기</span>
+                        <br>
+                    &nbsp; &nbsp;제목<input type="text" placeholder="제목을 입력해주세요" class="input_title">
+                <br>
+                    작성자<input type="text" placeholder="작성하신분 성별을 입력해주세여" class="input_title">
+                <br>
+                    답변 받을 이메일 <input type="text" placeholder="이메일주소"class="mail_text"><span>@<spna>
+                        <select name="mail" id="mail" class="">
+                            <option value="gmail" selected>gmail.com</option>
+                            <option value="naver" >naver.com</option>
+                            <option value="hanmail" >hanmail.net</option>p
+                            <option value="write" >직접입력</option>
+                        </select>
+                    <br>
+                    문의 내용 <textarea></textarea>
+                <br>
+                    <button >문의하기</button>
+                    <button >초기화</button>
+                    </div>
+                </form>
+                    
+            
+        </article>
+    </section>
+ </body>
+ </html>    

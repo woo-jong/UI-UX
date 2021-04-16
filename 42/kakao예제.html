@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+<style>
+.title{text-align: center;}
+.main_form{text-align: center;
+     border:1px solid lightgrey; width:600px; height:1500px; }
+     .id_form{padding-top:20px;text-align: left;
+        padding-left:50px; padding-right:50px; margin:0px auto;
+    }
+     .id_input{width:80%; border:none; height:40px; font-size:17px; font-weight:bold;
+                outline:none;   }
+hr{border:1px solid lightgray; margin-right:5px; margin-top: 2px; margin-bottom: 2px;}
+li{font-size:14px; color:lightgray; font-weight: bold; }
+.right{float:right}
+.margin_top{margin-top: 15px;}
+.margin_botton{margin-bottom:15px;}
+.padding{padding:15px;}
+select{border: none; font-size:18px;}
+button{text-align: center; font-size:17px;}
+.span_left{padding-left: 10px; height:30px; border-radius: 20px; float:right; border:1px solid lightgrey}
+.radio{font-size:16px;}
+.h2{width:500px; height:50px; border-radius: 5px; border:none; background-color: lightgray;}
+.margin_right{margin-right: 10px;}
+</style>
+</head>
+</head>
+<body>
+    
+        
+    
+    <form action="" class="main_form">
+        <h1 class="title">kakao</h1>
+            <div class="id_form">
+            카카오계정 정보를 입력해주세요
+            <br>
+            카카오계정 이메일
+            <br>
+            <input type="text" id="id" name="id" placeholder="아이디입력" class="id_input"><span class="right">@kakao.com</span>
+            <hr>
+            <ul>
+            <li>입력한 카카오메일로 카카오계정에 로그인할 수 있습니다.</li>
+            <li>한번만든 카카오메일은 변경할 수 없으나, 오타가 없도록 신중히 확인해주세요.</li>
+            <li>생성한 카카오메일로 카카오계정과 관련한 알림을 받아볼 수 있습니다.</li>
+            </ul>
+            </div>
+            <div class="id_form">
+                비밀번호
+                <br>
+                <input type="password" id="pwd" placeholder="비밀번호(8~32자리)" class="id_input">
+                <hr>
+                </div>
+                <div class="id_form">
+                닉네임
+                <br>
+                <input type="text" id="nick" name="nick" placeholder="닉네임을 입력하세요" class="id_input"><span class="right">0/20</span>
+                    <hr>
+            </div>
+            <div class="id_form">
+             전화번호
+             <br>
+             <select name="number" id="number" class="margin_top">
+                 <option value="82">82</option>
+                 <option value="031">031</option>
+                 <option value="010">010</option>
+             </select>
+             <input type="text" id="number" name="number" placeholder="전화번호" class="id_input">
+             <hr>
+             <button class="span_left h">인증번호전송</button>
+            <br>
+            </div>
+            <div class="id_form">
+                
+                <span class="padding">생일/성별</span>
+            
+                <br>
+                <select name="year" id="year" >
+                    <option value="2021" selected>년</option>
+                    <option value="2021">2021</option>
+                    <option value="2021">2020</option>
+                    <option value="2021">2019</option>
+                </select>
+                <select name="year" id="year" >
+                    <option value="2021" selected>월</option>
+                    <option value="2021">12</option>
+                    <option value="2021">11</option>
+                    <option value="2021">10</option>
+                </select>
+                <select name="year" id="year" >
+                    <option value="2021" selected>일</option>
+                    <option value="2021">31</option>
+                    <option value="2021">30</option>
+                    <option value="2021">29</option>
+                </select>
+                <input type="checkbox" class="right"><spna class="right">음력</span>
+                    <br>
+                    <hr class="margin_top margin_bottom">
+            </div>
+            <div class="id_form">
+                <input type="radio" checked class="margin_right">선택안함
+                <input type="radio" class="margin_right">여성
+                <input type="radio"  class="margin_right">남성
+            </div>
+            <div> 
+             <button class="h2 margin_top">다음</button>
+            </div>
+
+            
+        </form>
+
+
+
+
+
+
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<style>
+/*
+태그가 inline(가로세로 여백x 내용만큼만크기가잡힘 width,heightx) , block로 구분을 하는데, inline태그를 block 태그나
+ 다른 형태로 변경할때 사용하는css가 display- inline, block, inline-block , none
+
+*/
+*{
+    margin:0px;
+    padding:0px;
+    
+}
+
+.img{
+    visibility:hidden;
+
+}
+li{border: 1px solid black;
+    display: inline-block;
+    width:100px;
+    height:50px;
+    
+    
+    }
+ul{list-style-type: none; font-size:0px;} /*글자크기를 0으로해서  여백을없애고 다시내부 크기를지정*/
+.menu_a{font-size:16px; line-height: 16px; color:black;
+        width:100%;
+         text-decoration: none; text-align: center;
+         padding:17px 0px; display:inline-block;
+
+
+
+}
+</style>
+<body>
+    <ul> <!--block태그-->
+        <li><a href="#" class="menu_a">항목1</li>
+        <li><a href="#" class="menu_a">항목2</li>
+        <li><a href="#" class="menu_a">항목3</li>
+        <li><a href="#" class="menu_a">항목4</li>
+        <li><a href="#" class="menu_a">항목5</li>
+
+    </ul>
+</hr>
+<a href="#">버튼</a>
+<a href="#">버튼</a>
+<a href="#">버튼</a>
+<a href="#">버튼</a>
+<a href="#">버튼</a>
+<hr>
+<h2>display<!--영역은안잡아주고 숨김-->:none, visibility<!--영역은 잡아주고숨긴다--> : hidden 차이</h2>
+<img src="day25_1.png" class="img" >
+<img src="day25_1.png" >
+
+</body>
+
+</html>

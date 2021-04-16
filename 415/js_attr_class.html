@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+<style>
+ .box1{
+     background-color: black;
+
+ }
+.box2{
+    background-color: red;
+}
+div{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+}
+.border{border:1px solid blue;}
+</style>
+</head>
+<body>
+<div class="box1" onmouseover="changebackground();" onclick="removeborder();"></div>
+
+<script>
+    function changebackground(){
+    //box 선택
+        var box=document.getElementsByClassName("box1")[0];
+        //현재 선택된 박스의 배경색 값을 읽어오기
+        //box.style <--태그 style 속성에서 적용한 값들을 읽어옴 
+        console.log(box.style.backgroundColor);
+        console.log(box.className);
+        box.className="box2";
+        console.log(box.style.backgroundColor);
+        console.log(box.className);
+        //클래스 추가 : 추가할때는  띄어쓰기를한다.
+        box.className+= " border";}
+
+        function removeborder(){
+            var box = document.getElementsByClassName("div")[0];
+            //alert(box.className);
+            //box.className = box.className.replace("border","");
+            //box.className = box.className.trim(); 
+            //alert(box.className.length);}
+            var arr = box.className.split("");
+            arr =arr.slice(arr.indexof("border"),1);
+            box.className= arr.join("")}
+            //올린거보고 재작성
+</script>    
+</body>
+</html>

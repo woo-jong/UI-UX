@@ -1,0 +1,15 @@
+alt+shitf+enter - 정렬
+shit delt
+clt+d
+<img src="" alt=""> alt=""은 엑박이 뜰경우 대체되는 글자내용
+img파일 경로(상대경로,절대경로,웹주소)
+상대경로일때(현재html 파일을 기준으로 해당 이미지까지의 경로)
+-> <img src="폴더명/이미지파일명" (너비)width="" (높이)height="">
+<img src="../이미지명.jpg"> <-상위폴더로 갈때
+
+<img src="/ing/sub/image1.jpg"> <!--URL ROOT폴더 기준으로 경로를 잡음-->>
+ <!--절때 경로일때--> 
+<video src="파일위치/파일명.mp4" loop, controls, poster="파일명">
+<iframe></iframe>다른웹사이트에서 가져올떄
+
+<audio src="오디오파일명.mp3"></audio>

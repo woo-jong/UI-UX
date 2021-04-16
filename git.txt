@@ -1,0 +1,11 @@
+git add 파일명
+git *
+버전만듬
+git commit-m "커밋 메세지"
+
+-1이 아니면 
+-1이면 
+
+번호가 뜨면 
+
+windows.macintosh, iphone, adroid,

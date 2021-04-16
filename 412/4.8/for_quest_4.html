@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script >
+        var table="<table>"
+        var i=1;
+        var j=1;
+        for(j=5; j>0; j--){
+            table+="<tr>"
+            for(i=1 ; i<6; i++){
+                if(i==j){
+                    table+="<td>"+i+"</td>"
+                    
+                }
+                 
+                 else{
+                    table+="<td></td>"
+
+                }
+                
+                table+="</tr>";
+            }
+                }
+        table=+"</table>";
+                document.write(table);
+    </script>
+    <style>
+table{border: 1px solid black;}
+
+    </style>
+</head>
+<body>
+    
+</body>
+</html>

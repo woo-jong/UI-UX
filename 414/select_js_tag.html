@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+//이벤트 : 사용자가 웹페이지에서 하는  행동 : 마우스를 클릭 ,키보드 자판을 누름 ,페이지 로드가 되었거나 , submit버튼을 눌렀을때
+//자바스크립트에서 태그 접는방법 
+        
+    </script>
+</head>
+<body>
+                <input type="text" name="t1" value="A"><br>
+                <input type="text" name="t2" value="B"><br>
+                <input type="text" name="t3" value="C"><br>
+                <input type="text" name="t4" value="D"><br>
+                <P>1</P>
+                <P>2</P>
+                <P><b>3</b></P>
+                <P>4</P>
+                <P>5</P>
+
+                <H1>H1-1</H1>
+                <SCript>
+                    //태그명 기준으로 접근
+                    var p = document.getElementsByTagName("P"); //배열로관리험
+                    console.log("선택된 p 태그");
+                    console.log("선택된 p태그 개수:"+p.length);
+                    //innerHTML : 선택된 요소안에 있는 HTML 태그 내용을 가지고 있는 변수 
+                    for(i=0; i<p.length; i++){
+                        console.log(p[i].innerHTML);
+                        p[i].style.backgroundColor="green";
+                    }
+                    var h1=document.getElementsByTagName("h1");
+                    console.log("선택된 h1태그 개수:"+h1.length);
+                    console.log(h1[i]+innerHTML);
+                    //input 태그 선택반복문까지만 처리
+                    var input = document.getElementsByTagName("input");
+                    console.log(input.length);
+                    for(i=0; i<input.length; i++){
+                        //input tag 에 입력된 값을 읽어옴 (value속성값을 읽어옴)
+                        console.log(input[i].value+ ": " + input[i]/_);
+                        /* input[i].value+= i; */
+                    }
+                </SCript>
+            </body>
+</html>

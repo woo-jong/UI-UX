@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+        <form name="frm">
+            <h2>로그인</h2>
+        아이디입력<input type="text" name="id" id="id"> 
+        <br>
+        비밀번호<input type="password" name="pass" id="pass"> 
+            <button typ="button" onclick="loginCheck">로그인</button>
+
+        </form>
+    <script>
+        function loginCheck(){
+                var id= document.getElementsByName("id"); // 배열로 관리
+              //  var pass= document.getElementsByName("pass"); // 배열로 관리
+                var pass = document.frm.pass; // form태그에 있는 pass에접근 
+              console.log(id.value+ ":"+ pass.value);
+        }
+            if(id.value.length==0 || pass.value.length==""){
+                alert("입력하시오");
+            } //둘중에하나 미입력, ""로도 빈문자열을 표현할 수 있다.
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+<style>
+div{
+    width:1000px;
+    height:700px;
+    border : 20px dashed black;
+    padding:50px;
+    background-image: url('/3.25/day25_1.png');   
+    /*no-repeat, repeat-x.repeat-y , repeat:가로세로반복,기본값
+                가로로만반복/세로로만 반복
+    */ 
+    background-repeat: no-repeat;
+    /*
+    배경이미지 사이즈 가로 세로 픽셀,%로 줄 수 있음
+    background-size:cover(비율상 작은거 기준으로 늘림),contain(비율상 긴거 기준으로 늘림)
+        */
+    background-size: 300px;
+    /*
+    배경이미지 위치 잡을때 px ,&단위로 좌표 설정 
+    키워드를 이용해서 top center bottom right left로 잡을 수 있음.
+    */    
+    background-position: top left;
+    /*background-origin:이미지 시작지점 지정*/
+    background-origin: content-box;
+    }
+
+
+
+</style>
+
+
+</head>
+<body>
+    <div></div>    
+</body>
+</html>
